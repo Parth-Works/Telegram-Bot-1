@@ -1,9 +1,9 @@
 !pip install adafruit-io
 x = "Ahmed_Muneer"
-y = "aio_tafT08QKRw2BEWjxgEJsyGwbceCX"
+y = "aio_tafT08QKRw2BEWjxgEJsyGwbceCX"  #Use your own Adafruit Active Key
 from Adafruit_IO import Client, Feed
 aio = Client(x,y)
-new = Feed(name='bot123')
+new = Feed(name='bot123')     #Creating a new feed
 result = aio.create_feed(new)
 result
 from Adafruit_IO import Data
@@ -20,7 +20,7 @@ def off(bot,update):
   aio.create_data('bot123',Data(value = 0))
   bot.send_message(chat_id =chat_id,text ="Lights Off")
 
-updater = Updater('1314501154:AAFupk7zdBSYmGlY2cDaSUdYLO4RAfF3TXs')
+updater = Updater('1314501154:AAFupk7zdBSYmGlY2cDaSUdYLO4RAfF3TXs')     #Use Telegram Token HTTP API
 dp =updater.dispatcher
 dp.add_handler(CommandHandler('on',on))
 dp.add_handler(CommandHandler('off',off))
