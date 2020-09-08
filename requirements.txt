@@ -1,4 +1,4 @@
-from Adafruit_IO import Client, Feed
-from Adafruit_IO import Data
-from Adafruit_IO import Client,Data
-from telegram.ext import Updater,CommandHandler
+Client, Feed
+Data
+Client,Data
+Updater,CommandHandler
