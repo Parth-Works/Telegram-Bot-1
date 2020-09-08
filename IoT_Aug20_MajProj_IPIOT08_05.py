@@ -1,6 +1,7 @@
 !pip install adafruit-io
-x = "Ahmed_Muneer"
-y = "aio_tafT08QKRw2BEWjxgEJsyGwbceCX"  #Use your own Adafruit Active Key
+import os
+x = os.getenv('x')
+y = os.getenv('y')  #Use your own Adafruit Active Key
 from Adafruit_IO import Client, Feed
 aio = Client(x,y)
 new = Feed(name='bot123')     #Creating a new feed
