@@ -27,4 +27,3 @@ dp.add_handler(CommandHandler('on',on))
 dp.add_handler(CommandHandler('off',off))
 updater.start_polling()
 updater.idle()
-
