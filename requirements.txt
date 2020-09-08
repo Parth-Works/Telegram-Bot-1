@@ -1,4 +1,2 @@
-Client, Feed
-Data
-Client,Data
-Updater,CommandHandler
+python-telegram-bot
+adafruit_IO
